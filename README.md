@@ -7,7 +7,7 @@
 
 > 🚧 **Cantiere aperto.** Labooh la uso ogni giorno e funziona già bene, ma non è finita: cresce con chi la usa e ogni settimana si aggiunge o si migliora qualcosa.
 
-![Labooh, la pagina iniziale](immagini/labooh-landing-pc.png)
+![Labooh, la pagina iniziale](immagini/labooh-copertina.png)
 
 ---
 
@@ -19,15 +19,23 @@ Nel lavoro delle affissioni tante ore se ne vanno in attività ripetitive: ricop
 
 **✉️ Mail** — scrivi o detti due righe di getto e l'AI le trasforma in una mail o in un messaggio chat curato: forma (Lei, Tu, Voi) e tono a scelta, risposta a una mail ricevuta, senza inventare fatti.
 
+![Mail](immagini/labooh-mail.png)
+
 **🗓️ Pianificazione** — piano spazi pronto da incollare in una mail, tabulati di smistamento per ogni squadra in PDF ed Excel, promemoria salvati online e condivisibili con i colleghi.
+
+![Pianificazione](immagini/labooh-pianificazione.png)
 
 **📍 NP · Note posizioni** — da un file Excel di posizioni a un PDF ordinato con infografiche, elenco degli impianti con il link di ognuno e mappa. Controllo automatico delle coordinate: trova i punti in mare, fuori dal comune o doppi e propone la correzione.
 
+![Note posizioni](immagini/labooh-note-posizioni.png)
+
 **🗺️ Mappe** — mappa interattiva con le puntine colorate per tipo di impianto; si tocca una puntina per vedere la scheda (formato, indirizzo, Street View) e la si sposta con il mouse se è nel posto sbagliato.
+
+![Mappe](immagini/labooh-mappe.png)
 
 **🧪 Progetto** — il testo del progetto scritto dall'AI con i dati veri della campagna, da rileggere e modificare, e la brochure: da stampare (A4, A3, pieghevole) oppure in PDF da mandare per mail, con la mappa interattiva, l'Excel da scaricare e le foto degli impianti.
 
-![Labooh, la presentazione completa](immagini/labooh-presentazione-pc.png)
+![Progetto](immagini/labooh-progetto.png)
 
 ## Come è fatta
 
@@ -44,6 +52,8 @@ Nel lavoro delle affissioni tante ore se ne vanno in attività ripetitive: ricop
 | Account | accesso personale con approvazione, permessi per sezione, sessioni a scadenza, privacy e termini d'uso (GDPR) |
 
 Tutto gira su servizi con piano gratuito.
+
+<p align="center"><img src="immagini/labooh-telefono.png" alt="Labooh sul telefono" width="280"></p>
 
 ## Il mio ruolo
 
