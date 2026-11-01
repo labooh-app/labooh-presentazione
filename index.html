@@ -66,6 +66,13 @@
   .nota-tec { background:var(--carta); border:1px solid var(--linea); border-radius:14px; padding:16px 18px; font-size:15.5px; color:#36414d; }
   .nota-tec b { color:var(--tx); }
 
+  .pulsanti { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+  .pulsanti a { display:inline-flex; align-items:center; gap:6px; height:46px; padding:0 18px; border-radius:12px; font-weight:700; font-size:16px; text-decoration:none; font-family:"Outfit", "DM Sans", sans-serif; }
+  .pulsanti .pieno { background:var(--blu); color:#fff; }
+  .pulsanti .pieno:hover { background:var(--blu-scuro); }
+  .pulsanti .vuoto { background:var(--carta); color:var(--blu); border:1.5px solid var(--blu); }
+  .pulsanti .vuoto:hover { background:var(--azz); }
+  .attesa { font-size:13.5px; color:var(--muto); margin:8px 0 0 !important; }
   .link-fondo { display:grid; grid-template-columns:1fr 1fr; gap:14px; padding-bottom:34px; }
   .link-fondo a { display:block; background:var(--carta); border:1px solid var(--linea); border-radius:14px; padding:14px 16px; text-decoration:none; color:var(--tx); }
   .link-fondo a:hover { border-color:var(--blu); }
@@ -105,7 +112,11 @@
         <p>Lavoro con i cartelloni pubblicitari. Molte ore se ne andavano a ricopiare Excel, preparare i fogli per le squadre e le mappe per i clienti.</p>
         <p>Labooh fa questo lavoro in pochi minuti.</p>
         <p class="io">L'ho ideata e costruita io, con l'aiuto di un'intelligenza artificiale (Claude).</p>
-        <p class="firma">Pianifica, scrivi, presenta.</p>
+        <div class="pulsanti">
+          <a class="pieno" href="https://labooh-app.onrender.com/">Apri l'app ›</a>
+          <a class="vuoto" href="https://github.com/labooh-app/labooh-presentazione">Vedi su GitHub ›</a>
+        </div>
+        <p class="attesa">L'app è ad accesso riservato: puoi lasciare la tua richiesta. Può metterci un minuto ad aprirsi.</p>
       </div>
       <!-- il video: se il file non c'è ancora si vede l'immagine (poster) -->
       <div class="schermo" aria-label="Labooh in uso">
@@ -161,11 +172,6 @@
       </div>
     </div>
   </section>
-
-  <div class="wrap link-fondo">
-    <a href="https://github.com/labooh-app/labooh-presentazione"><b>Il progetto su GitHub ›</b><span>Descrizione, immagini e com'è fatta.</span></a>
-    <a href="https://labooh-app.onrender.com/"><b>Vuoi usarla quando apre? ›</b><span>Lascia la tua richiesta nell'app. Può metterci un minuto ad aprirsi.</span></a>
-  </div>
 </main>
 
 <footer>
