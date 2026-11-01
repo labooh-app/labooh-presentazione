@@ -1,75 +1,74 @@
 # Labooh 👻
 
-**Pianifica, scrivi, presenta.** Un'app web che ho ideato e costruito per il mio lavoro nelle affissioni pubblicitarie: organizza le squadre, prepara le note posizioni con la mappa, scrive i testi dei progetti e impagina le brochure per i clienti.
+**L'app che uso per organizzare le affissioni pubblicitarie.**
+Progetto personale: l'ho ideata e costruita io, con l'aiuto di un'intelligenza artificiale (Claude).
 
-👉 **Guardala dal vivo:** [labooh-app.onrender.com](https://labooh-app.onrender.com)
-(la pagina iniziale si apre senza password; l'app vera e propria è ad accesso riservato)
+👉 **Presentazione:** [labooh-app.github.io/labooh-presentazione](https://labooh-app.github.io/labooh-presentazione/)
 
-> 🚧 **Cantiere aperto.** Labooh la uso ogni giorno e funziona già bene, ma non è finita: cresce con chi la usa e ogni settimana si aggiunge o si migliora qualcosa.
+L'app è ad accesso riservato: il codice e i dati di lavoro non sono pubblici.
+Vuoi usarla quando apre? Lascia la tua richiesta su [labooh-app.onrender.com](https://labooh-app.onrender.com/) (può metterci un minuto ad aprirsi).
 
-![Labooh, la pagina iniziale](immagini/labooh-copertina.png)
+> 🚧 **Cantiere aperto.** La uso ogni giorno e ogni settimana migliora qualcosa.
 
----
+![Labooh](sito/anteprima-link.png)
 
-## Perché l'ho fatta
+## Il problema
 
-Nel lavoro delle affissioni tante ore se ne vanno in attività ripetitive: ricopiare elenchi di posizioni da un Excel all'altro, controllare a mano che ogni impianto sia nel punto giusto della mappa, preparare i fogli per ogni squadra, scrivere mail e presentazioni per i clienti. Labooh raccoglie tutto questo in un solo posto e fa il lavoro noioso, così resta più tempo per i clienti.
+Lavoro con i cartelloni pubblicitari. Molte ore se ne andavano a ricopiare Excel, preparare i fogli per le squadre, decidere i giri e fare mappe e presentazioni per i clienti. Labooh fa questo lavoro in pochi minuti.
 
 ## Cosa fa
 
-**✉️ Mail** — scrivi o detti due righe di getto e l'AI le trasforma in una mail o in un messaggio chat curato: forma (Lei, Tu, Voi) e tono a scelta, risposta a una mail ricevuta, senza inventare fatti.
+**🗓️ Squadre**
+Dal file della campagna ai fogli per ogni squadra, in PDF ed Excel. Promemoria salvati online e condivisi con i colleghi.
 
-![Mail](immagini/labooh-mail.png)
+![Squadre](sito/pianificazione.webp)
 
-**🗓️ Pianificazione** — piano spazi pronto da incollare in una mail, tabulati di smistamento per ogni squadra in PDF ed Excel, promemoria salvati online e condivisibili con i colleghi.
+**🚚 Giri di affissione**
+Organizzo e pianifico i giri di affissione, per ottimizzare l'espletamento e garantire puntualità su tutti i comuni. Scelgo in che giorno andare in ogni comune, le campagne si dividono da sole e posso ritoccarle a mano. Escono i tabulati per ogni giro e il riepilogo di poster e manifesti.
 
-![Pianificazione](immagini/labooh-pianificazione.png)
+![Giri di affissione](sito/giri.webp)
 
-**📍 NP · Note posizioni** — da un file Excel di posizioni a un PDF ordinato con infografiche, elenco degli impianti con il link di ognuno e mappa. Controllo automatico delle coordinate: trova i punti in mare, fuori dal comune o doppi e propone la correzione.
+**📍 Posizioni**
+Elenco degli impianti con la mappa, in PDF. Trova da sola i punti sbagliati: in mare, fuori dal comune o doppi.
 
-![Note posizioni](immagini/labooh-note-posizioni.png)
+![Posizioni](sito/mappe.webp)
 
-**🗺️ Mappe** — mappa interattiva con le puntine colorate per tipo di impianto; si tocca una puntina per vedere la scheda (formato, indirizzo, Street View) e la si sposta con il mouse se è nel posto sbagliato.
+**🧪 Clienti**
+Il testo del progetto scritto con l'AI, da rileggere, e la brochure: da stampare (A4, A3, pieghevole) o in PDF da mandare per mail, con mappa interattiva ed Excel.
 
-![Mappe](immagini/labooh-mappe.png)
+![Clienti](sito/progetto.webp)
 
-**🧪 Progetto** — il testo del progetto scritto dall'AI con i dati veri della campagna, da rileggere e modificare, e la brochure: da stampare (A4, A3, pieghevole) oppure in PDF da mandare per mail, con la mappa interattiva, l'Excel da scaricare e le foto degli impianti.
+**✉️ Mail**
+Due righe scritte o dettate diventano una mail curata, nel tono giusto, senza inventare fatti.
 
-![Progetto](immagini/labooh-progetto.png)
+## Come l'ho fatta
 
-## Come è fatta
+- Ho deciso cosa serviva e come doveva funzionare.
+- Il codice l'ho scritto insieme a Claude, un'intelligenza artificiale.
+- Ho provato ogni versione sul lavoro vero e corretto quello che non andava.
 
 | | |
 |---|---|
-| Interfaccia | React + TypeScript (Vite), pensata per PC e telefono, tema chiaro e scuro |
+| App | React e TypeScript, per PC e telefono, tema chiaro e scuro |
 | Server | Node.js con Express |
 | Database | PostgreSQL su Supabase (server nell'Unione europea) |
-| Intelligenza artificiale | modelli Google Gemini, con scelta automatica del modello più adatto |
+| AI | modelli Google Gemini |
 | Mappe | MapLibre, OpenFreeMap e OpenStreetMap |
-| Documenti | PDF ed Excel generati direttamente nel browser |
-| Messa online | Render, con una versione di prova e una versione vera |
-| Automazioni | GitHub Actions: sveglia del server ogni mattina e copia di sicurezza del database ogni settimana |
-| Account | accesso personale con approvazione, permessi per sezione, sessioni a scadenza, privacy e termini d'uso (GDPR) |
+| Documenti | PDF ed Excel creati nel browser |
+| Online | Render, con una versione di prova e una vera |
+| Automazioni | GitHub Actions: sveglia del server e copia di sicurezza del database |
+| Account | accesso con approvazione, permessi, privacy e termini d'uso (GDPR) |
 
-Tutto gira su servizi con piano gratuito.
-
-<p align="center"><img src="immagini/labooh-telefono.png" alt="Labooh sul telefono" width="280"></p>
-
-## Il mio ruolo
-
-Labooh è un progetto personale, nato e cresciuto nel tempo libero. L'ho **ideata, progettata e guidata io**: ho deciso ogni funzione, il flusso di lavoro, la grafica e il fantasmino, e ho provato ogni versione sul lavoro vero, con file e campagne reali. Il codice l'ho sviluppato **insieme a un assistente AI (Claude)**, lavorando come un responsabile di prodotto: spiegare cosa serve, provare, correggere, decidere.
-
-Il codice sorgente resta privato.
+Tutto gira su servizi gratuiti. Il codice resta privato.
 
 ## Cosa arriva
 
-- note personali che seguono l'account
+- giri di affissione salvati online, da condividere con i colleghi
 - storico delle mail scritte
-- foto delle posizioni che restano anche ricaricando la pagina
-- e, come sempre, le idee di chi la usa
+- note personali che seguono l'account
 
 ---
 
 Contatti: **Filippo Gulisano** · labooh.ai@gmail.com
 
-<sub>Gli esempi nelle immagini (clienti, squadre, numeri) sono inventati.</sub>
+<sub>Gli esempi nelle immagini (campagne, vie, numeri) sono inventati.</sub>

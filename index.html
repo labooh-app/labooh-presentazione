@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Labooh · l'app che uso per organizzare le affissioni</title>
+<meta name="description" content="Progetto personale di Filippo Gulisano: un'app per organizzare le affissioni pubblicitarie, ideata da lui e costruita con l'aiuto di un'intelligenza artificiale.">
+<!-- anteprima del link su LinkedIn, WhatsApp e simili -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Labooh · l'app che uso per organizzare le affissioni">
+<meta property="og:description" content="Progetto personale: fogli per le squadre, note posizioni con la mappa e brochure per i clienti. Ideata da me, costruita con l'aiuto dell'AI.">
+<meta property="og:image" content="https://labooh-app.github.io/labooh-presentazione/sito/anteprima-link.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:url" content="https://labooh-app.github.io/labooh-presentazione/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- stessi caratteri dell'app: DM Sans (testo), Outfit (titoli), Days One (logo) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Outfit:wght@600;700;800&family=Days+One&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="sito/icona-32.png">
+<link rel="apple-touch-icon" href="sito/icona-apple-180.png">
+<style>
+  :root { --fondo:#F5F2EC; --carta:#FFFDF9; --blu:#1F5F8B; --blu-scuro:#17496B; --azz:#E3EDF6; --tx:#1b2430; --muto:#5b6775; --linea:#E3DED4; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--fondo); color:var(--tx); font:17px/1.55 "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  img, video { display:block; max-width:100%; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 16px; }
+
+  /* barra in alto */
+  .barra { border-bottom:1px solid var(--linea); }
+  .barra .wrap { display:flex; align-items:center; gap:10px; height:60px; }
+  .barra img { width:34px; height:34px; object-fit:contain; }
+  .barra b { font-family:"Days One", "Outfit", sans-serif; font-weight:400; font-size:21px; color:var(--blu); }
+  .barra span { margin-left:auto; font-size:14px; color:var(--muto); }
+
+  /* primo schermo */
+  .hero .wrap { display:grid; grid-template-columns:1fr 1.05fr; gap:44px; align-items:center; padding-top:44px; padding-bottom:48px; }
+  .etichetta { display:inline-block; background:var(--azz); color:var(--blu); font-size:13px; font-weight:700; letter-spacing:.4px; text-transform:uppercase; padding:5px 11px; border-radius:999px; }
+  h1, h2, h3, .etichetta { font-family:"Outfit", "DM Sans", sans-serif; }
+  h1 { font-weight:800; font-size:42px; line-height:1.12; letter-spacing:-.8px; margin:14px 0 14px; }
+  .hero p { margin:0 0 12px; color:#36414d; }
+  .io { border-left:4px solid var(--blu); padding:4px 0 4px 12px; margin-top:18px !important; color:var(--tx) !important; }
+  .firma { font-size:14px; color:var(--muto); margin-top:18px !important; }
+  .schermo { background:var(--carta); border:1px solid var(--linea); border-radius:16px; box-shadow:0 18px 40px rgba(23,73,107,.12); overflow:hidden; }
+  .schermo .punti { height:28px; border-bottom:1px solid var(--linea); display:flex; gap:6px; align-items:center; padding:0 12px; }
+  .schermo .punti i { width:9px; height:9px; border-radius:50%; background:#D9D3C7; }
+  .schermo video { width:100%; aspect-ratio:16/10; object-fit:cover; background:#fff; }
+
+  /* cosa fa */
+  section { padding:40px 0; }
+  h2 { font-weight:800; font-size:30px; letter-spacing:-.4px; margin:0 0 6px; }
+  .sotto { color:var(--muto); margin:0 0 24px; }
+  .tre { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  .scheda { background:var(--carta); border:1px solid var(--linea); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
+  .scheda img { width:100%; aspect-ratio:16/11; object-fit:contain; padding:10px; border-bottom:1px solid var(--linea); background:#fff; }
+  .scheda div { padding:14px 16px 16px; }
+  .scheda h3 { margin:0 0 4px; font-size:19px; }
+  .scheda p { margin:0; color:#36414d; font-size:16px; }
+
+  /* come l'ho fatta */
+  .due { display:grid; grid-template-columns:1.2fr 1fr; gap:28px; }
+  .due ul { margin:0; padding-left:20px; }
+  .due li { margin:6px 0; }
+  .nota-tec { background:var(--carta); border:1px solid var(--linea); border-radius:14px; padding:16px 18px; font-size:15.5px; color:#36414d; }
+  .nota-tec b { color:var(--tx); }
+
+  .link-fondo { display:grid; grid-template-columns:1fr 1fr; gap:14px; padding-bottom:34px; }
+  .link-fondo a { display:block; background:var(--carta); border:1px solid var(--linea); border-radius:14px; padding:14px 16px; text-decoration:none; color:var(--tx); }
+  .link-fondo a:hover { border-color:var(--blu); }
+  .link-fondo b { display:block; color:var(--blu); font-family:"Outfit", "DM Sans", sans-serif; font-size:18px; }
+  .link-fondo span { font-size:14.5px; color:var(--muto); }
+  @media (max-width: 860px) { .link-fondo { grid-template-columns:1fr; } }
+  footer { border-top:1px solid var(--linea); padding:26px 0 40px; font-size:15px; color:var(--muto); }
+  footer b { color:var(--tx); }
+  footer a { color:var(--blu); }
+
+  @media (max-width: 860px) {
+    .hero .wrap, .due { grid-template-columns:1fr; gap:26px; }
+    .hero .wrap { padding-top:28px; }
+    h1 { font-size:31px; }
+    .tre { grid-template-columns:1fr; }
+    .barra span { display:none; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <div class="wrap">
+    <img src="sito/fantasmino.webp" alt="">
+    <b>Labooh</b>
+    <span>Progetto personale di Filippo Gulisano</span>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="etichetta">Progetto personale · in uso ogni giorno</span>
+        <h1>L'app che uso per organizzare le affissioni pubblicitarie.</h1>
+        <p>Lavoro con i cartelloni pubblicitari. Molte ore se ne andavano a ricopiare Excel, preparare i fogli per le squadre e le mappe per i clienti.</p>
+        <p>Labooh fa questo lavoro in pochi minuti.</p>
+        <p class="io">L'ho ideata e costruita io, con l'aiuto di un'intelligenza artificiale (Claude).</p>
+        <p class="firma">Pianifica, scrivi, presenta.</p>
+      </div>
+      <!-- il video: se il file non c'è ancora si vede l'immagine (poster) -->
+      <div class="schermo" aria-label="Labooh in uso">
+        <div class="punti"><i></i><i></i><i></i></div>
+        <video autoplay muted loop playsinline preload="metadata" poster="sito/note-posizioni.webp">
+          <source src="sito/labooh-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <section style="background:#EEF2F5">
+    <div class="wrap">
+      <h2>Cosa fa</h2>
+      <p class="sotto">Quattro lavori che prima facevo a mano.</p>
+      <div class="tre">
+        <article class="scheda">
+          <img src="sito/pianificazione.webp" alt="Tabulato per una squadra" loading="lazy">
+          <div><h3>Squadre</h3><p>Dal file della campagna ai fogli per ogni squadra, in PDF ed Excel.</p></div>
+        </article>
+        <article class="scheda">
+          <img src="sito/giri.webp" alt="Giri di affissione divisi per giorno" loading="lazy">
+          <div><h3>Giri di affissione</h3><p>Organizzo e pianifico i giri di affissione, per ottimizzare l'espletamento e garantire puntualità su tutti i comuni.</p></div>
+        </article>
+        <article class="scheda">
+          <img src="sito/mappe.webp" alt="Mappa con gli impianti" loading="lazy">
+          <div><h3>Posizioni</h3><p>Elenco degli impianti con la mappa. Trova da sola i punti sbagliati.</p></div>
+        </article>
+        <article class="scheda">
+          <img src="sito/progetto.webp" alt="Brochure per il cliente" loading="lazy">
+          <div><h3>Clienti</h3><p>Brochure da stampare o PDF da mandare per mail, con mappa ed Excel.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap due">
+      <div>
+        <h2>Come l'ho fatta</h2>
+        <p class="sotto">Non sono un programmatore. Ho lavorato come chi guida un progetto:</p>
+        <ul>
+          <li>ho deciso cosa serviva e come doveva funzionare;</li>
+          <li>il codice l'ho scritto insieme a Claude, un'intelligenza artificiale;</li>
+          <li>ho provato ogni versione sul lavoro vero e corretto quello che non andava.</li>
+        </ul>
+        <p>È un cantiere aperto: la uso ogni giorno e ogni settimana migliora qualcosa.</p>
+      </div>
+      <div class="nota-tec">
+        <b>Com'è fatta</b><br>
+        App web per PC e telefono (React e Node.js), database PostgreSQL, mappe OpenStreetMap, PDF ed Excel creati nel browser. Account con permessi, privacy e copie di sicurezza automatiche. Tutto su servizi gratuiti.<br><br>
+        <b>L'app è ad accesso riservato.</b> Questa pagina è una presentazione: il codice e i dati di lavoro non sono pubblici.
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap link-fondo">
+    <a href="https://github.com/labooh-app/labooh-presentazione"><b>Il progetto su GitHub ›</b><span>Descrizione, immagini e com'è fatta.</span></a>
+    <a href="https://labooh-app.onrender.com/"><b>Vuoi usarla quando apre? ›</b><span>Lascia la tua richiesta nell'app. Può metterci un minuto ad aprirsi.</span></a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Filippo Gulisano</b> · <a href="mailto:labooh.ai@gmail.com">labooh.ai@gmail.com</a><br>
+    Gli esempi nelle immagini (campagne, vie, numeri) sono inventati.
+  </div>
+</footer>
+
+</body>
+</html>
