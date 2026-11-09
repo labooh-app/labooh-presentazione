@@ -53,11 +53,6 @@ Il testo del progetto scritto con l'AI, da rileggere, e la brochure: da stampare
 
 ![Clienti](sito/progetto.webp)
 
-**👻 GhostInk**
-Due righe scritte o dettate diventano una mail, un testo o un messaggio per chat, nel tono giusto, senza inventare fatti.
-
-![GhostInk](sito/ghostink.webp)
-
 ## Come l'ho fatta
 
 - Ho deciso cosa serviva e come doveva funzionare.
