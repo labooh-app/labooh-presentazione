@@ -14,7 +14,7 @@ Vuoi usarla quando apre? Lascia la tua richiesta su [labooh-app.onrender.com](ht
 
 ## Il problema
 
-Coordino le affissioni in tutta la Sicilia occidentale: più di 60 campagne ogni 14 giorni, sei squadre, agenti e uffici da tenere insieme. Molte ore se ne andavano tra Excel, telefonate e fogli per le squadre. Labooh fa questo lavoro in pochi minuti.
+Coordino le affissioni in tutta la Sicilia occidentale: più di 60 campagne ogni 14 giorni, sei squadre, agenti e uffici da tenere insieme. Molte ore se ne andavano tra Excel, telefonate e fogli per le squadre. Invisibile ma sempre al lavoro: Labooh fa questo lavoro in pochi minuti.
 
 ## Cosa fa
 
@@ -33,13 +33,30 @@ Elenco degli impianti con la mappa, in PDF. Trova da sola i punti sbagliati: in 
 
 ![Posizioni](sito/mappe.webp)
 
+**🗺️ Mappe intelligenti**
+Parto dagli spazi liberi e dai luoghi che contano per il cliente: collezioni di punti di interesse (supermercati, farmacie, scuole), raggi e isocrone a piedi o in auto, e una mappa interattiva da mandare.
+
+![Mappe intelligenti](sito/mappa-intelligente.webp)
+
+**📋 Espletamento**
+Dal file dei tabulati l'elenco degli ordini da seguire, con gli stati a colori: Incompleto, Primo invio, Inviato, Completo. Si condivide con i colleghi: possono solo vedere o anche modificare.
+
+![Espletamento](sito/espletamento.webp)
+
+**🪧 Parchi impianti**
+Il parco sempre aggiornato: chi è libero e chi è occupato, con codice, ubicazione, note e una foto per impianto. I parchi si salvano e si aggiornano; gli spazi liberi vanno al Lab e diventano brochure e mappa per il cliente.
+
+![Parchi impianti](sito/parchi.webp)
+
 **🧪 Clienti**
 Il testo del progetto scritto con l'AI, da rileggere, e la brochure: da stampare (A4, A3, pieghevole) o in PDF da mandare per mail, con mappa interattiva ed Excel.
 
 ![Clienti](sito/progetto.webp)
 
-**✉️ Mail**
-Due righe scritte o dettate diventano una mail curata, nel tono giusto, senza inventare fatti.
+**👻 GhostInk**
+Due righe scritte o dettate diventano una mail, un testo o un messaggio per chat, nel tono giusto, senza inventare fatti.
+
+![GhostInk](sito/ghostink.webp)
 
 ## Come l'ho fatta
 
@@ -63,9 +80,8 @@ Tutto gira su servizi gratuiti. Il codice resta privato.
 
 ## Cosa arriva
 
-- giri di affissione salvati online, da condividere con i colleghi
-- storico delle mail scritte
 - note personali che seguono l'account
+- …e qualche idea che bolle in pentola
 
 ---
 
