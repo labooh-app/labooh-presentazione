@@ -28,6 +28,11 @@ Organizzo e pianifico i giri di affissione, per ottimizzare l'espletamento e gar
 
 ![Giri di affissione](sito/giri.webp)
 
+**🌦️ Meteo**
+Il meteo dei giri a colpo d'occhio: per ogni comune un semaforo verde, giallo o rosso sulle 24 ore (si lavora la sera e la mattina presto), per pioggia e raffiche di vento. Il bollettino di 3 o 5 giorni si manda alle squadre come cartolina PDF o pagina interattiva con la cartina, e i siti di fiducia sono a un clic.
+
+![Meteo](sito/meteo.webp)
+
 **📍 Posizioni**
 Elenco degli impianti con la mappa, in PDF. Trova da sola i punti sbagliati: in mare, fuori dal comune o doppi.
 
@@ -66,6 +71,7 @@ Il testo del progetto scritto con l'AI, da rileggere, e la brochure: da stampare
 | Database | PostgreSQL su Supabase (server nell'Unione europea) |
 | AI | modelli Google Gemini |
 | Mappe | MapLibre, OpenFreeMap e OpenStreetMap |
+| Meteo | dati MET Norway (Istituto meteorologico norvegese) |
 | Documenti | PDF ed Excel creati nel browser |
 | Online | Render, con una versione di prova e una vera |
 | Automazioni | GitHub Actions: sveglia del server e copia di sicurezza del database |
