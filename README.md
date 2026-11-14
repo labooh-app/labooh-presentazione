@@ -31,7 +31,7 @@ Organizzo e pianifico i giri di affissione, per ottimizzare l'espletamento e gar
 **🌦️ Meteo**
 Il meteo dei giri a colpo d'occhio: per ogni comune un semaforo verde, giallo o rosso sulle 24 ore (si lavora la sera e la mattina presto), per pioggia e raffiche di vento. Il bollettino di 3 o 5 giorni si manda alle squadre come cartolina PDF o pagina interattiva con la cartina, e i siti di fiducia sono a un clic.
 
-![Meteo](sito/meteo.webp)
+![Meteo](meteo.webp)
 
 **📍 Posizioni**
 Elenco degli impianti con la mappa, in PDF. Trova da sola i punti sbagliati: in mare, fuori dal comune o doppi.
@@ -88,4 +88,4 @@ Tutto gira su servizi gratuiti. Il codice resta privato.
 
 Contatti: **Filippo Gulisano** · labooh.ai@gmail.com
 
-<sub>Gli esempi nelle immagini (campagne, vie, numeri) sono inventati.</sub>
+<sub>Gli esempi nelle immagini (campagne, vie, numeri) sono inventati. Aeronautica Militare, 3bmeteo, ilMeteo e Windy sono nomi e marchi dei rispettivi titolari: Labooh mette solo un collegamento ai loro siti e non è legata a loro. I dati meteo sono di MET Norway.</sub>
